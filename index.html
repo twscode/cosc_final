@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgan State CS Course Advisor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">MSU CS Advisor</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <header id="home" class="parallax">
+            <h1>Welcome to Morgan State CS Course Advisor</h1>
+            <p>Your personal guide through your academic journey.</p>
+        </header>
+        <main>
+            <section class="about" id="about">
+                <h2>About Us</h2>
+                <p>This chatbot is designed to help Morgan State University Computer Science students with course planning and academic advice.</p>
+            </section>
+            <section class="services parallax" id="services">
+                <h2>Services</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Course Advice</h3>
+                        <p>Get recommendations on courses based on your academic progress and interests.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Registration Help</h3>
+                        <p>Assistance with course registration processes and deadlines.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Graduation Checklist</h3>
+                        <p>Ensure you are on track for graduation with a personalized checklist.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="chatbot-container">
+                <iframe 
+                    src="https://widget.writesonic.com/CDN/index.html?service-base-url=https://api-azure.botsonic.ai&token=2768a139-3cc6-4218-b2ec-429315008598&base-origin=https://bot.writesonic.com&instance-name=Botsonic&standalone=true&page-url=https://bot.writesonic.com/e292ff56-0eea-4372-ae32-d9fddb203f8d?t=connect&workspace_id=7a6abe48-4fbf-42f7-8476-431c9a361e3d" 
+                    frameborder="0" 
+                    style="width: 100%; height: 500px;">
+                </iframe>
+            </section>
+            <section class="contact" id="contact">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Morgan State University Computer Science Department. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
